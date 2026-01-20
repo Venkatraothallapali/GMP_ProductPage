@@ -30,19 +30,16 @@ const Navbar = () => {
           <div className="flex items-center space-x-2">
             {navItems.map((item) => {
               const Icon = item.icon;
-              const isDashboard = item.path === '/dashboard';
               return (
                 <Link
                   key={item.path}
                   to={item.path}
                   className={`relative flex items-center space-x-2 px-5 py-2.5 rounded-xl transition-all duration-300 font-medium ${
                     isActive(item.path)
-                      ? isDashboard
-                        ? 'text-white shadow-lg shadow-blue-500/30 scale-105'
-                        : 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/30 scale-105'
+                      ? 'text-white shadow-lg shadow-blue-500/30 scale-105'
                       : 'text-gray-700 hover:bg-gray-100/80 hover:text-blue-600'
                   }`}
-                  style={isActive(item.path) && isDashboard ? { backgroundColor: '#1e82c9' } : {}}
+                  style={isActive(item.path) ? { backgroundColor: '#1e82c9' } : {}}
                 >
                   <Icon className={`w-4 h-4 ${isActive(item.path) ? 'text-white' : ''}`} />
                   <span>{item.label}</span>
