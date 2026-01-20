@@ -171,7 +171,7 @@ const ObservationAnalysis = () => {
         {/* Header */}
         <div className="mb-8 animate-fade-in">
           <div className="flex items-center space-x-3 mb-3">
-            <div className="w-1 h-12 bg-gradient-to-b from-blue-600 to-purple-600 rounded-full"></div>
+            <div className="w-1 h-12 rounded-full bg-[#1e82c9]"></div>
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-2">Observation Analysis & CFR Mapping</h1>
               <p className="text-gray-600 text-lg">Enter an observation to find relevant CFR citations, historical patterns, and CAPA recommendations</p>
@@ -182,7 +182,10 @@ const ObservationAnalysis = () => {
         {/* Search Form */}
         <div className="card mb-8 card-hover">
           <div className="flex items-center space-x-3 mb-6">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg"
+              style={{ backgroundColor: '#1e82c9' }}
+            >
               <Search className="w-6 h-6 text-white" />
             </div>
             <div>
@@ -216,7 +219,7 @@ const ObservationAnalysis = () => {
               {/* System Dropdown */}
               <div>
                 <label htmlFor="system" className="block text-sm font-semibold text-gray-700 mb-2">
-                  <Filter className="w-4 h-4 inline mr-2 text-purple-600" />
+                  <Filter className="w-4 h-4 inline mr-2 text-[#1e82c9]" />
                   System *
                 </label>
                 <select
@@ -506,8 +509,11 @@ const ObservationAnalysis = () => {
                                   <h4 className="font-bold text-gray-800 mb-3 text-base border-b border-gray-300 pb-2">Preventive Actions</h4>
                                   <div className="space-y-2">
                                     {result.capaData.preventiveActions.map((action, idx) => (
-                                      <div key={idx} className="flex items-start space-x-3 p-3 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-                                        <CheckCircle className="w-4 h-4 text-purple-600 mt-0.5 flex-shrink-0" />
+                                      <div
+                                        key={idx}
+                                        className="flex items-start space-x-3 p-3 bg-blue-50 rounded-lg border-l-4 border-[#1e82c9]"
+                                      >
+                                        <CheckCircle className="w-4 h-4 text-[#1e82c9] mt-0.5 flex-shrink-0" />
                                         <p className="text-sm text-gray-700">{action}</p>
                                       </div>
                                     ))}

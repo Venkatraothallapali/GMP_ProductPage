@@ -69,7 +69,7 @@ const RequestDemo = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex justify-center mb-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1e82c9' }}>
               <Calendar className="w-8 h-8 text-white" />
             </div>
           </div>
@@ -83,7 +83,7 @@ const RequestDemo = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="card text-center">
             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <User className="w-6 h-6 text-blue-600" />
+              <User className="w-6 h-6 text-[#1e82c9]" />
             </div>
             <h3 className="font-bold text-gray-800 mb-2">Personalized Walkthrough</h3>
             <p className="text-gray-600 text-sm">
@@ -92,8 +92,8 @@ const RequestDemo = () => {
           </div>
 
           <div className="card text-center">
-            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Building className="w-6 h-6 text-purple-600" />
+            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Building className="w-6 h-6 text-[#1e82c9]" />
             </div>
             <h3 className="font-bold text-gray-800 mb-2">Expert Consultation</h3>
             <p className="text-gray-600 text-sm">

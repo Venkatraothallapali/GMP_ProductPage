@@ -41,18 +41,17 @@
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600;
+    @apply bg-[#1e82c9];
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600;
-    background-size: 200% 200%;
-    animation: gradient-shift 3s ease infinite;
+    @apply bg-clip-text text-transparent;
+    background: #1e82c9;
   }
   
   .btn-primary {
     @apply px-6 py-3 rounded-xl font-semibold text-white;
-    @apply bg-gradient-to-r from-blue-600 to-purple-600;
+    background-color: #1e82c9;
     @apply shadow-lg shadow-blue-500/50;
     @apply transition-all duration-300 ease-out;
     @apply hover:shadow-xl hover:shadow-blue-500/60;
@@ -170,7 +169,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(180deg, #1e82c9, #1e82c9);
   border-radius: 10px;
   border: 2px solid #f8fafc;
 }
