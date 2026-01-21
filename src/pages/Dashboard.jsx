@@ -310,6 +310,14 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen py-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Brand Heading (pill style, like VeritaScribe) */}
+        <div className="mb-6 flex justify-center">
+          <div className="inline-flex items-center justify-center px-10 py-3 rounded-full bg-white shadow-lg border border-gray-200">
+            <span className="text-2xl sm:text-3xl font-semibold text-[#1e82c9]">
+              CompliSense
+            </span>
+          </div>
+        </div>
         {/* Header */}
         <div className="mb-10 animate-fade-in">
           <div className="flex items-center space-x-3 mb-3">
